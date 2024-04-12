@@ -1,0 +1,39 @@
+body {
+    overflow-x: hidden;
+    background-color: #F8F9F6;
+}
+.appHeader {
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+h1 {
+    padding-left: 40px;
+}
+.appHeaderButtonList {
+    padding-right: 40px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.defaultColor {
+    color: var(--defaultText);
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        padding-left: 16px;
+        font-size: 28px;
+    }
+    .appHeaderButtonList {
+        padding-right: 16px;
+        gap: 8px;
+    }
+}
